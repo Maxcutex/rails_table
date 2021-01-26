@@ -1,0 +1,96 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+.lead {
+  font-size: 1.1rem;
+  padding-right: 7px ;
+}
+.active {
+  font-weight: bold;
+  color: green;
+}
+.inactive {
+  color: red;
+}
+.selected {
+  background-color: #0dbbdf !important;
+}
+.actions {
+  width: 88px;
+}
+.btn-add {
+  margin: 0 auto;
+  max-width: 265px;
+}
+.btn-order {
+  color: #f8f9fa;
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 0 17px 0 0;
+}
+.btn-order:hover {
+  color: #f8f9fa;
+}
+.btn-change img {
+  height: 16px;
+}
+.sort-icon {
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.edit-column {
+  min-width: 90px;
+}
+.alpha-down {
+  background-image: url('../img/sort-alpha-down-alt-solid.svg');
+}
+.alpha-up {
+  background-image: url('../img/sort-alpha-up-solid.svg');
+}
+.numeric-down {
+  background-image: url('../img/sort-numeric-down-alt-solid.svg');
+}
+.numeric-up {
+  background-image: url('../img/sort-numeric-up-solid.svg');
+}
+.amount-down {
+  background-image: url('../img/sort-amount-down-solid.svg');
+}
+.amount-up {
+  background-image: url('../img/sort-amount-up-alt-solid.svg');
+}
+.modal-footer {
+  justify-content: space-between;
+}
+
+.valid {
+  label, input {
+    color: theme-color("success");
+  }
+  input {
+    border-color: theme-color("success");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center right 40px;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+  }
+}
+
+.invalid {
+  label, input {
+    color: theme-color("danger");
+  }
+  input {
+    border-color: theme-color("danger");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center right 40px;
+    background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+  }
+}
