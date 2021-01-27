@@ -1,24 +1,36 @@
-# README
+# Trainual One Page App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a single page application that will handle Create, Update and Delete actions. 
 
-Things you may want to cover:
+It was built based on unique tools from Rails world:
 
-* Ruby version
+- Turbolinks
+- StimulusJs
+- StimulusReflex
+- CableReady
 
-* System dependencies
+* Database: PostgreSQL
+* Cache: Redis (on dev)
 
-* Configuration
+## How to start up
+On Development environment run the following commands 
 
-* Database creation
+- rails dev: cache
+- rails db: create
+- rails db: migrate
+- rails db: seed
 
-* Database initialization
 
-* How to run the test suite
+## Features
+- No heavy javascript libraries used to minify bundle size
+- assets managed by webpacker
+- most of the time pure html is transferred over the wire with almost no painfully slow page refreshes
+- coloumns sorting
+- search field with filter functionality
+- form in modal
+- validations for name, email, phone
+- seed data to create 1000 users
+- results paginated (25 per page)
+- constraints both in code and on database level
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
