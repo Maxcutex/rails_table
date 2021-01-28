@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   validates :name, presence: true, length: {minimum: 3, maximum: 100}
   validates :email, presence: true, email: true, uniqueness: true
-  validates :phone, presence: true
+  validates :phone, phone: true, presence: true
 
   scope :search, ->(query) {
     query = sanitize_sql_like(query)
